@@ -1,28 +1,33 @@
 *
     margin: 0
     padding: 0
+    box-sizing: border-box
 body
     margin: 0
     padding: 0
     font-family: 'DM Sans', sans-serif;
+    display: flex
+    align-items: center
+    justify-content: center
     // font-family: 'Mulish', sans-serif;
 .wrapper
-    padding: 30px 185px 160px
     width: 1070px
+    padding: 30px 0 160px
 .header
     display: flex
     justify-content: space-between
     align-items: center
-    &__button
-        padding: 20px 60px
-        color: #ffffff
-        border: none
-        border-radius: 10px
-        background-color: #ff7143
-        font-size: 17px
-        &:hover
-            background-color: #e2643b
-            cursor: pointer
+    margin-bottom: 100px
+.button
+    padding: 20px 60px
+    color: #ffffff
+    border: none
+    border-radius: 10px
+    background-color: #ff7143
+    font-size: 17px
+    &:hover
+        background-color: #e2643b
+        cursor: pointer
 .logo
     img
         width: 200px
@@ -35,6 +40,53 @@ body
     font-size: 15px
     &__item
         list-style: none
+        position: relative
         &:hover
             color: #19191b
             cursor: pointer
+            &::after
+                width: 100%
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: -10px
+            width: 0
+            height: 2px
+            background-color: #5454d4
+            transition: 0.4s
+.main
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__img
+        width: 610px
+        margin-right: -80px
+    &__text
+        width: 460px
+    &__title
+        font-weight: bold
+        font-size: 80px
+        line-height: 77px
+        margin: 0
+        margin-bottom: 30px
+        color: #19191b
+    &__subtitle
+        font-size: 20px
+        line-height: 30px
+        color: #696871
+        margin-bottom: 50px
+    &__button
+        background-color: #5454d4
+        &:hover
+            background-color: #4646b3
+        &_download
+            padding: 18px
+            border: 1px solid #E7E7E7
+            border-radius: 50%
+            background-color: #ffffff
+    &__buttons
+        width: 315px
+        display: flex
+        align-items: center
+        justify-content: space-between
