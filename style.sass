@@ -63,8 +63,9 @@ body
     align-items: center
     margin-bottom: 100px
     &__img
-        width: 610px
         margin-right: -80px
+        img
+            width: 610px
     &__text
         width: 460px
     &__title
@@ -108,7 +109,8 @@ body
     align-items: center
     margin-bottom: 85px
     &__img
-        width: 350px
+        img
+            width: 350px
     &__text
         width: 556px
     &__title
@@ -131,7 +133,7 @@ body
 .advantages
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: top
     margin-bottom: 150px
 .advantage
     max-width: 310px
@@ -231,3 +233,65 @@ body
         &:hover
             border: 2px solid #5454d4
             background-color: #ffffff
+
+@media screen and ( max-width: 1200px )
+    .wrapper
+        width: 900px
+        overflow: hidden
+    .main
+        &__img
+            margin-right: 0
+            img
+                width: 450px
+        &__text
+            width: 400px
+        &__title
+            font-size: 64px
+            line-height: 64px
+        &__subtitle
+            font-size: 18px
+            line-height: 26px
+    .standardBlock
+        &__img
+            img
+                width: 300px
+        &__text
+            width: 500px
+        &__title
+            font-size: 45px
+            line-height: 50px
+        &__subtitle
+            font-size: 18px
+            line-height: 27px
+        &__link
+            font-size: 16px
+            line-height: 20px
+    .advantage
+        max-width: 260px
+        &__title
+            font-size: 20px
+            line-height: 30px
+        &__subtitle
+            font-size: 16px
+            line-height: 24px
+    .plans
+        &__title
+            font-size: 50px
+            line-height: 55px
+            width: 500px
+    .plan
+        width: 280px
+        padding: 30px 20px 25px
+        &_main
+            padding: 50px 30px 40px
+        &__price
+            font-size: 50px
+            line-height: 50px
+            margin-bottom: 22px
+            span
+                font-size: 25px
+        &__spec
+            font-size: 17px
+            line-height: 42px
+        &__specs
+            margin-bottom: 30px
